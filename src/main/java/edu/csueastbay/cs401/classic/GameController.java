@@ -24,6 +24,7 @@ public class GameController implements Initializable {
     public static final int FIELD_HEIGHT = 860;
     public static final int VICTORY_SCORE = 10;
 
+
     private ClassicPong game;
     private Timeline timeline;
 
@@ -36,7 +37,7 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        game = new ClassicPong(VICTORY_SCORE, FIELD_WIDTH, FIELD_HEIGHT);
+        game = new ClassicPong(VICTORY_SCORE, FIELD_WIDTH, FIELD_HEIGHT, fieldPane);
 
         addGameElementsToField();
         setUpTimeline();
