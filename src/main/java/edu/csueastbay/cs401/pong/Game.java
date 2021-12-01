@@ -8,8 +8,10 @@ import java.util.ArrayList;
 public abstract class Game {
     private int playerOneScore;
     private Paddle playOnePaddle;
+    private Paddle playOnePaddle2;
     private int playerTwoScore;
     private Paddle playTwoPaddle;
+    private Paddle playTwoPaddle2;
     private int victoryScore;
     private ArrayList<Collidable> objects;
     private ArrayList<Puckable> pucks;
@@ -72,7 +74,9 @@ public abstract class Game {
     public void move() {
 
         playOnePaddle.move();
+        playOnePaddle2.move();
         playTwoPaddle.move();
+        playTwoPaddle2.move();
 
         for (Puckable puck : pucks) {
             checkCollision(puck);
@@ -89,13 +93,18 @@ public abstract class Game {
         });
     }
 
-    protected void addPlayerPaddle(int player, Paddle paddle) {
+    protected void addPlayerPaddle(int player, Paddle paddle, Paddle paddle2) {
         if (player == 1) {
             playOnePaddle = paddle;
             addObject(paddle);
+            playOnePaddle2 = paddle2;
+            addObject(paddle2);
+
         } else if (player == 2) {
             playTwoPaddle = paddle;
             addObject(paddle);
+            playTwoPaddle2 = paddle2;
+            addObject(paddle2);
         }
     }
 
@@ -115,6 +124,18 @@ public abstract class Game {
             case K:
                 playTwoPaddle.moveDown();
                 break;
+            case W:
+                playOnePaddle2.moveUp();
+                break;
+            case S:
+                playOnePaddle2.moveDown();
+                break;
+            case O:
+                playTwoPaddle2.moveUp();
+                break;
+            case L:
+                playTwoPaddle2.moveDown();
+                break;
         }
     }
 
@@ -123,8 +144,14 @@ public abstract class Game {
             case E, D:
                 playOnePaddle.stop();
                 break;
+            case W, S:
+                playOnePaddle2.stop();
+                break;
             case I, K:
                 playTwoPaddle.stop();
+                break;
+            case O, L:
+                playTwoPaddle2.stop();
                 break;
         }
     }

@@ -90,9 +90,12 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 10, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1p2 = new Paddle("Player 1", 10, 10, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1p2);
+
         Paddle player2 = new Paddle("Player 1", 100, 10, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2p2 = new Paddle("Player 1", 100, 10, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2,player2p2);
 
         game.move();
         assertFalse(((TestGame) game).collisionDetected);
@@ -111,9 +114,11 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1p2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1p2);
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2p2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2,player2p2);
 
         game.keyPressed(KeyCode.E);
         game.move();
@@ -129,9 +134,13 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1P2);
+
+
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2,player2P2);
 
         game.keyPressed(KeyCode.I);
         game.move();
@@ -147,9 +156,12 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1P2);
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player2,player2P2);
+
 
         game.keyPressed(KeyCode.D);
         game.move();
@@ -165,9 +177,11 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1P2);
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2, player2P2);
 
         game.keyPressed(KeyCode.K);
         game.move();
@@ -184,9 +198,12 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1P2);
+
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2, player2P2);
 
         game.keyPressed(KeyCode.E);
         game.move();
@@ -205,9 +222,12 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player1,player1P2);
+
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2,player2P2);
 
         game.keyPressed(KeyCode.I);
         game.move();
@@ -226,9 +246,12 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player1,player1P2);
+
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2,player2P2);
 
         game.keyPressed(KeyCode.D);
         game.move();
@@ -246,9 +269,11 @@ class GameTest {
         game.addPuck(puck);
 
         Paddle player1 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(1, player1);
+        Paddle player1P2 = new Paddle("Player 1", 10, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(1, player1,player1P2);
         Paddle player2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
-        game.addPlayerPaddle(2, player2);
+        Paddle player2P2 = new Paddle("Player 1", 100, 100, 10, 100, 0, 500);
+        game.addPlayerPaddle(2, player2, player2P2);
 
         game.keyPressed(KeyCode.K);
         game.move();

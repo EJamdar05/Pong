@@ -1,15 +1,15 @@
-package edu.csueastbay.cs401.classic;
+package edu.csueastbay.cs401.football;;
 
 import edu.csueastbay.cs401.pong.*;
 import javafx.scene.paint.Color;
 
-public class ClassicPong extends Game {
-    
+public class footballPong extends Game {
+
     private double fieldHeight;
     private double fieldWidth;
-    
-    
-    public ClassicPong(int victoryScore, double fieldWidth, double fieldHeight) {
+
+
+    public footballPong(int victoryScore, double fieldWidth, double fieldHeight) {
         super(victoryScore);
 
         this.fieldWidth = fieldWidth;
@@ -37,7 +37,7 @@ public class ClassicPong extends Game {
 
         Paddle playerOne = new Paddle(
                 "Player 1 Paddle",
-                300,
+                50,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
@@ -47,7 +47,7 @@ public class ClassicPong extends Game {
 
         Paddle playerOneP2 = new Paddle(
                 "Player 1 Paddle",
-                50,
+                100,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
@@ -58,7 +58,7 @@ public class ClassicPong extends Game {
 
         Paddle playerTwo = new Paddle(
                 "Player 2 Paddle",
-                this.fieldWidth - 300,
+                this.fieldWidth - 50,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
