@@ -52,6 +52,8 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <additionalparam>-Xdoclint:none</additionalparam>
+                    <useStandardDocletOptions>false</useStandardDocletOptions>
+
                 </configuration>
             </plugin>
             <plugin>
