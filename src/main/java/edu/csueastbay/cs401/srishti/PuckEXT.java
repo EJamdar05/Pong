@@ -7,8 +7,8 @@ import java.util.Random;
 
 
 /**
+ * @see edu.csueastbay.cs401.pong.Puck
 *This class extends Puck class
-*
 */
 
 public class PuckEXT extends Puck {
@@ -84,7 +84,5 @@ public class PuckEXT extends Puck {
 		setCenterX(getCenterX() + deltaX);
 		setCenterY(getCenterY() + deltaY);
 	}
-	
-
 
 }
