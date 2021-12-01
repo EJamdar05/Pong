@@ -39,7 +39,7 @@ public class GameController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         System.out.println("p[eeee");
         game = new ClassicPong(VICTORY_SCORE, FIELD_WIDTH, FIELD_HEIGHT);
-        Platform.runLater(()->fieldPane.requestFocus());
+        Platform.runLater(() -> fieldPane.requestFocus());
         addGameElementsToField();
         setUpTimeline();
 
@@ -54,7 +54,7 @@ public class GameController implements Initializable {
         });
 
         ArrayList<Collidable> objects = game.getObjects();
-        objects.forEach((object)-> {
+        objects.forEach((object) -> {
             fieldPane.getChildren().add((Node) object);
         });
 
@@ -86,6 +86,4 @@ public class GameController implements Initializable {
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
     }
-
-
 }

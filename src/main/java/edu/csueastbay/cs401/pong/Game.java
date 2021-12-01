@@ -1,6 +1,7 @@
 package edu.csueastbay.cs401.pong;
 
 import javafx.scene.input.KeyCode;
+import javafx.scene.media.AudioClip;
 import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
@@ -20,7 +21,6 @@ public abstract class Game {
         this.pucks = new ArrayList<>();
         this.playerOneScore = 0;
         this.playerTwoScore = 0;
-
     }
 
 
@@ -48,7 +48,7 @@ public abstract class Game {
     public int getVictor() {
         int victor = 0;
         if (playerOneScore >= victoryScore) victor = 1;
-        else if (playerTwoScore>= victoryScore) victor =2;
+        else if (playerTwoScore >= victoryScore) victor = 2;
         return victor;
     }
 
@@ -132,4 +132,5 @@ public abstract class Game {
                 break;
         }
     }
+
 }
