@@ -40,7 +40,7 @@ public class ClassicPong extends Game {
                 300,
                 (this.fieldHeight/2) - 50,
                 10,
-                100,
+                300,
                 10,
                 this.fieldHeight - 10);
         playerOne.setFill(Color.RED);
@@ -61,7 +61,7 @@ public class ClassicPong extends Game {
                 this.fieldWidth - 300,
                 (this.fieldHeight/2) - 50,
                 10,
-                100,
+                300,
                 10,
                 this.fieldHeight - 10);
         playerTwo.setFill(Color.BLUE);
