@@ -23,14 +23,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-
 /**
  * This class invokes PuckEXT by calling the constructor
  * PuckEXT increases the size of the Puck
  *
  * Adding background music as a change
  */
-
 public class GameControllerEXT implements Initializable {
 	public static final int FIELD_WIDTH = 1300;
 	public static final int FIELD_HEIGHT = 860;
@@ -97,8 +95,6 @@ public class GameControllerEXT implements Initializable {
 		timeline.setCycleCount(Animation.INDEFINITE);
 		timeline.play();
 	}
-
-
 /**
  *
  *  adding a new method for background music
@@ -113,5 +109,4 @@ public class GameControllerEXT implements Initializable {
 		//by setting this property to true, the audio will be played
 		mediaPlayer.play();
 	}
-
 }

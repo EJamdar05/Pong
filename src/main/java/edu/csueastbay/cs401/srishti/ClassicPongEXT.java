@@ -11,7 +11,6 @@ import javafx.scene.paint.Color;
  * adding hit audio as a change
  *
  */
-
 public class ClassicPongEXT extends GameEXT {
 
 	private double fieldHeight;
@@ -93,5 +92,4 @@ public class ClassicPongEXT extends GameEXT {
 	public static double mapRange(double a1, double a2, double b1, double b2, double s) {
 		return b1 + ((s - a1) * (b2 - b1)) / (a2 - a1);
 	}
-
 }
