@@ -20,8 +20,9 @@ public abstract class Game {
         this.pucks = new ArrayList<>();
         this.playerOneScore = 0;
         this.playerTwoScore = 0;
-
     }
+
+
 
 
     public int getPlayerScore(int player) {
@@ -46,7 +47,7 @@ public abstract class Game {
     public int getVictor() {
         int victor = 0;
         if (playerOneScore >= victoryScore) victor = 1;
-        else if (playerTwoScore>= victoryScore) victor =2;
+        else if (playerTwoScore >= victoryScore) victor = 2;
         return victor;
     }
 
@@ -61,13 +62,17 @@ public abstract class Game {
         return (ArrayList<Collidable>) objects.clone();
     }
 
-    public void addPuck(Puckable ball) {
-        this.pucks.add(ball);
-    }
+    public void addPuck(Puckable ball) {this.pucks.add(ball);}
 
     public ArrayList<Puckable> getPucks() {
         // Also shallow copy
         return (ArrayList<Puckable>) pucks.clone();
+    }
+
+
+    public void clearPucks() {
+
+        pucks.clear();
     }
 
     public void move() {
@@ -110,6 +115,7 @@ public abstract class Game {
             case D:
                 playOnePaddle.moveDown();
                 break;
+
             case I:
                 playTwoPaddle.moveUp();
                 break;
@@ -129,4 +135,6 @@ public abstract class Game {
                 break;
         }
     }
+
 }
+
