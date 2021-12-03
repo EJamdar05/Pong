@@ -28,7 +28,7 @@ public class FootballPong extends FootballGame {
         addObject(bottom);
 
 
-        Goal left = new Goal("Player 1 Goal", this.fieldWidth -50, 10, 10, this.fieldHeight - 20);
+        Goal left = new Goal("Player 1 Goal", this.fieldWidth -50, 295, 10, this.fieldHeight - 575);
         left.setFill(Color.RED);
         addObject(left);
 
