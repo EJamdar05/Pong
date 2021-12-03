@@ -24,16 +24,41 @@ public class FootballPong extends FootballGame {
         addObject(top);
 
         Wall bottom = new Wall("Bottom Wall", 0, this.fieldHeight -10, this.fieldWidth, 10 );
-        bottom.setFill(Color.WHITE);
+        bottom.setFill(Color.BLACK);
         addObject(bottom);
 
-        Goal left = new Goal("Player 1 Goal", this.fieldWidth -10, 10, 10, this.fieldHeight - 20);
+
+        Goal left = new Goal("Player 1 Goal", this.fieldWidth -50, 10, 10, this.fieldHeight - 20);
         left.setFill(Color.RED);
         addObject(left);
 
-        Goal right = new Goal("Player 2 Goal", 0, 10, 10, this.fieldHeight - 20);
+        Goal right = new Goal("Player 2 Goal", 50, 295, 10, this.fieldHeight - 575);
         right.setFill(Color.BLUE);
         addObject(right);
+
+
+
+        Paddle player1GoalPaddle = new Paddle(
+                "Player 1 Paddle",
+                5,
+                (this.fieldHeight/2) - 400,
+                10,
+                800,
+                10,
+                this.fieldHeight - 10);
+        player1GoalPaddle.setFill(Color.PINK);
+
+        Paddle player2GoalPaddle = new Paddle(
+                "Player 2 Paddle",
+                this.fieldWidth-10,
+                (this.fieldHeight/2) - 400,
+                10,
+                800,
+                10,
+                this.fieldHeight - 10);
+        player2GoalPaddle.setFill(Color.PINK);
+
+        addPlayerPaddle(1, player1GoalPaddle, player2GoalPaddle);
 
         Paddle playerOne = new Paddle(
                 "Player 1 Paddle",
@@ -47,7 +72,7 @@ public class FootballPong extends FootballGame {
 
         Paddle playerOneP2 = new Paddle(
                 "Player 1 Paddle",
-                50,
+                75,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
@@ -55,7 +80,6 @@ public class FootballPong extends FootballGame {
                 this.fieldHeight - 10);
         playerOneP2.setFill(Color.RED);
         addPlayerPaddle(1, playerOne, playerOneP2);
-
         Paddle playerTwo = new Paddle(
                 "Player 2 Paddle",
                 this.fieldWidth - 300,
@@ -68,7 +92,7 @@ public class FootballPong extends FootballGame {
 
         Paddle playerTwo2 = new Paddle(
                 "Player 2 Paddle",
-                this.fieldWidth - 50,
+                this.fieldWidth - 75,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
