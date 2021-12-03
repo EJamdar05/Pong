@@ -1,15 +1,15 @@
-package edu.csueastbay.cs401.football;;
+package edu.csueastbay.cs401.mEddyPong;
 
 import edu.csueastbay.cs401.pong.*;
 import javafx.scene.paint.Color;
 
-public class footballPong extends Game {
+public class FootballPong extends FootballGame {
 
     private double fieldHeight;
     private double fieldWidth;
 
 
-    public footballPong(int victoryScore, double fieldWidth, double fieldHeight) {
+    public FootballPong(int victoryScore, double fieldWidth, double fieldHeight) {
         super(victoryScore);
 
         this.fieldWidth = fieldWidth;
@@ -37,17 +37,17 @@ public class footballPong extends Game {
 
         Paddle playerOne = new Paddle(
                 "Player 1 Paddle",
-                50,
+                300,
                 (this.fieldHeight/2) - 50,
                 10,
-                100,
+                200,
                 10,
                 this.fieldHeight - 10);
         playerOne.setFill(Color.RED);
 
         Paddle playerOneP2 = new Paddle(
                 "Player 1 Paddle",
-                100,
+                50,
                 (this.fieldHeight/2) - 50,
                 10,
                 100,
@@ -58,10 +58,10 @@ public class footballPong extends Game {
 
         Paddle playerTwo = new Paddle(
                 "Player 2 Paddle",
-                this.fieldWidth - 50,
+                this.fieldWidth - 300,
                 (this.fieldHeight/2) - 50,
                 10,
-                100,
+                200,
                 10,
                 this.fieldHeight - 10);
         playerTwo.setFill(Color.BLUE);
