@@ -10,6 +10,8 @@ Compared to the base game, this Pong game added the following features
 * Can move in both x and y axis
 * Main Menu added with controls defined
 * Fixed controls to traditional PC ones 
+* Mute button on game screen
+* Exit button on game screen
 
 ## How to Run
 Make sure to run under any Java SDK that is 17 or higher. 
