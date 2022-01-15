@@ -1,18 +1,5 @@
-## CS401 Pong Assignment
+# CS401 Pong Assignment
+This pong assignment was done in my CS401 class and demontsrates the use of Software Engineering principles to create a large scale project as a part of a larger group of people/demonstating how to contribuite towards open source. Pong implemented in JavaFX. 
 
-Each student will:
-* Fork this Pong repository
-* Create their own version of the Pong game that:    
-  * Extends edu.csueastbay.cs401.pong.Game  
-  * You may also extend the other classes such as Wall and Puck  
-  * Your Game will have 3 or more improvements on the original Pong Game    
-    * Create better/more complicated game play    
-    * Make the game more entertaining or humorous     
-    * Change the game control or interface    
-    * Add sounds, images or other media  
-    * Your additions must have test coverage   
-    * Your addition must have JavaDocs   
-* When you are done you'll register your game in the edu.csueastbay.cs401.pong.Registar Class which will add a button to the main menu and make it playable.  
-* When you're ready you'll create a pull request back to the original repository.  
-* Lastly you'll submit you work on Blackboard
-  
+## How to Run
+Make sure to run under any Java SDK that is 17 or higher. 
