@@ -1,9 +1,6 @@
 package edu.csueastbay.cs401.ejamdar;
 
-
-import edu.csueastbay.cs401.classic.ClassicPong;
 import edu.csueastbay.cs401.pong.Collidable;
-import edu.csueastbay.cs401.pong.MainMenuController;
 import edu.csueastbay.cs401.pong.PongApplication;
 import edu.csueastbay.cs401.pong.Puckable;
 import javafx.animation.Animation;
@@ -13,32 +10,23 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import javafx.util.Duration;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.ResourceBundle;
-import edu.csueastbay.cs401.ejamdar.JamdarPong;
 
 public class GameController implements Initializable {
 
